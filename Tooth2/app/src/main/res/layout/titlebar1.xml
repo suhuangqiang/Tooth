@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/title_bar_blue">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30px" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/title_bar_blue">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:text="标题"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="70px"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/back">
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:src="@mipmap/arrow"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerVertical="true"
+                    />
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <TextView
+                android:id="@+id/titlebar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:text="添加"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/item_integral_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10px"
+            android:text="预约看牙"/>
+        <TextView
+            android:id="@+id/item_integral_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="2016-5-27"
+            android:layout_below="@+id/item_integral_title"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10px"
+            />
+        <TextView
+            android:id="@+id/item_integral_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="+ 100"
+            android:textColor="@color/money"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line1"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</LinearLayout>

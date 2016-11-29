@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">爱牙</string>
+    <!--启动页-->
+    <string name="welcomeBtn">直接进入</string>
+    <!--登入页-->
+    <string name="get_code">获取验证码</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="login_btn">登陆</string>
+    <string name="choose_other_login">选择其他方式登陆</string>
+    <string name="weixin_login">微信登陆</string>
+    <string name="qq_login">QQ登陆</string>
+
+    <string name="input_phone_number_error">请检查手机号码</string>
+
+    <!--绑定账号-->
+    <string name="account_bind_title">绑定账号</string>
+    <string name="Prompt">为了给您更好的服务，请绑定您的手机号：</string>
+    <string name="sure">确认</string>
+    <string name="weixin_user">亲爱的微信用户：</string>
+    <string name="qq_user">亲爱的QQ用户：</string>
+    <string name="login_now">马上登陆</string>
+    <string name="bind_succss">账号绑定成功，请点击登陆</string>
+
+    <!--看牙-->
+    <string name="input_text">请输入口腔诊所名称</string>
+    <string name="dentist_close">离我最近</string>
+    <string name="all">全部</string>
+    <string name="cancel">取消</string>
+    <string name="no">没有找到相关内容</string>
+
+    <!--首页-->
+    <string name="home_title">牙友</string>
+    <string name="home_points_exchange">积分兑换</string>
+    <string name="home_new_activity">最新活动</string>
+    <string name="home_friends">牙友圈</string>
+    <string name="home_encyclopedias">口腔百科</string>
+    <string name="home_common_sense">口腔常识</string>
+    <string name="home_family_archives">家人档案</string>
+    <string name="recommend">牙友推荐</string>
+    <string name="ask">牙友问问</string>
+    <string name="question">问卷调查</string>
+    <string name="turntable">大转盘</string>
+    <string name="activities_recommend">活动推荐</string>
+    <string name="integral">积分</string>
+    <string name="balance">余额</string>
+
+    <string name="my_book">我的预约</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="my_question">我的问卷</string>
+    <string name="my_ask">我的问问</string>
+
+    <!--医院详情-->
+    <string name="online_consulting">在线咨询</string>
+    <string name="book">我要预约</string>
+
+    <string name="change_phone">更换手机后，下次可使用新手机号登陆。</string>
+
+    <string name="raiders_1">1、怎么获取积分?</string>
+    <string name="raiders_2">2、积分用来做什么?</string>
+    <string name="radiers_1_1">1、每日登陆，每日登录时直接给积分</string>
+    <string name="radiers_1_2">2、问卷调查，完成可以获得50积分，每人每个问卷只可获得一次</string>
+    <string name="radiers_1_3">3、预约看牙，预约成功并完成就诊可获得1000积分</string>
+    <string name="radiers_1_4">4、转发分享，成功转发分享一次获得5积分，每人每天最多可获得3次</string>
+    <string name="radiers_1_5">5、发布帖子，条件：已登录、成功在问问或者牙友圈中发布帖子，每日可获得1次</string>
+    <string name="radiers_1_6">6，完善个人信息，完成可以获得10积分，每人只可获得一次</string>
+    <string name="radiers_1_7">7，游戏-大转盘</string>
+    <string name="raiders_2_1">可以在积分商城兑换各种礼品。</string>
+
+    <string name="about_1">牙科，媒体，市场等商务合作，请联系客服</string>
+    <string name="about_2">服务热线：400-000-000</string>
+    <string name="about_3">Email:xxxxx@xxx.com</string>
+
+    <string name="about_4">用户服务协议|免责声明</string>
+    <string name="aoubt_5">版权说明</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+</resources>

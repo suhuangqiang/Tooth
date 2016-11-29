@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.tooth.Activity.FamilyArchivesActivity">
+    <include android:id="@+id/titlebar" layout="@layout/titlebar1"/>
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/activity_family_archives_pcf"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/titlebar">
+
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+    <com.example.tooth.View.ListSlideView
+        android:id="@+id/activity_family_archives_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"
+        app:mode="right"></com.example.tooth.View.ListSlideView>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/activity_family_archives_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150px"
+            android:src="@mipmap/no"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/line"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/pic"
+            android:layout_marginTop="20px"
+            android:text="还没有添加家人"/>
+        <Button
+            android:id="@+id/activity_family_archives_btn"
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@color/title_bar_blue"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="点击添加"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</RelativeLayout>

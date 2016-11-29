@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.example.tooth"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':xutils')
+    compile project(':autolayout')
+    compile project(':ptr-lib')
+    compile files('libs/gson-2.3.1.jar')
+    compile project(':multi-image-selector')
+    compile files('libs/eventBus.jar')
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/volley.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile project(':photoView')
+    compile files('libs/alipaySdk-20160825.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ask_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tooth.Activity.AskListActivity">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <include layout="@layout/titlebar2"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/activity_ask_list_notice_click"
+            android:layout_width="match_parent"
+            android:layout_height="98px"
+            android:background="@drawable/while_gray_select">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/top"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginLeft="20px"
+                android:text="【公告】 版本规则，提问必看"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/activity_ask_list_pcf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/activity_ask_list_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="20px"
+                android:divider="@color/bg_color"></ListView>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</RelativeLayout>

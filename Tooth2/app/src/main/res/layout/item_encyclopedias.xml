@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="30px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="200px">
+        <ImageView
+            android:id="@+id/item_encyclopedisa_img"
+            android:layout_width="230px"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@color/listitem_gray"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px">
+            <TextView
+                android:id="@+id/item_encyclopedisa_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:lines="1"
+                android:ellipsize="end"
+                android:text="老人牙齿护理六误区"/>
+            <TextView
+                android:id="@+id/item_encyclopedisa_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10px"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5px"
+                android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容a a a "/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</LinearLayout>

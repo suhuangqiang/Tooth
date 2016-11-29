@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tooth.Activity.ChooseBookActivity">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/title_bar"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/activity_choose_book_pic1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/poster_1"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="@color/bg_color"/>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+            <ImageView
+                android:id="@+id/activity_choose_book_pic2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50px"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/poster_2"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</RelativeLayout>

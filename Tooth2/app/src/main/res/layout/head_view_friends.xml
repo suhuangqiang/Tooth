@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <com.zhy.autolayout.AutoLinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <com.zhy.autolayout.AutoRelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="400px"
+           android:background="@color/white">
+           <ImageView
+               android:id="@+id/head_view_friend_img"
+               android:layout_width="match_parent"
+               android:layout_height="320px"
+               android:scaleType="fitXY"
+               android:src="@mipmap/ask_banner2"
+               />
+           <ImageView
+               android:id="@+id/head_view_friend_headimg"
+               android:layout_width="120px"
+               android:layout_height="120px"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="40px"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="30px"
+               android:src="@mipmap/yayou_user"/>
+           <TextView
+               android:id="@+id/head_view_friend_name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:textColor="@color/white"
+               android:text="用户1号"
+               android:layout_toLeftOf="@+id/head_view_friend_headimg"
+               android:layout_marginRight="30px"
+               android:layout_alignBottom="@+id/head_view_friend_img"
+               android:layout_marginBottom="5px"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="80px"
+               android:layout_alignParentBottom="true" />
+       </com.zhy.autolayout.AutoRelativeLayout>
+   </com.zhy.autolayout.AutoLinearLayout>
+</LinearLayout>

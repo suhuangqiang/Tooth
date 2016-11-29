@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tooth.Fragment.ProblemFragment">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/fragment_problem_pcf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/fragment_problem_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</FrameLayout>

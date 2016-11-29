@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tooth.Activity.AskActivity">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <include layout="@layout/titlebar1"/>
+
+
+
+        <EditText
+            android:id="@+id/activity_ask_et"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:background="@null"
+            android:hint="详细描述您的问题"
+            android:textColorHint="@color/line"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:gravity="top|left"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/bg_color"/>
+        <GridView
+            android:id="@+id/activity_ask_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:horizontalSpacing="20px"
+            android:verticalSpacing="20px"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"></GridView>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</RelativeLayout>
