@@ -3,6 +3,7 @@ package com.example.tooth.Activity;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -137,7 +138,9 @@ public class MapViewActivity extends BaseActivity {
 
                     }
                 };
+                View view = LayoutInflater.from(getBaseContext()).inflate(R.layout.pop_map_view,null);
                 mInfoWindow = new InfoWindow(location, llInfo,0);
+                //mInfoWindow = new InfoWindow(view, llInfo,0);
                 // 显示InfoWindow
                 mBaiduMap.showInfoWindow(mInfoWindow);
                 return true;
