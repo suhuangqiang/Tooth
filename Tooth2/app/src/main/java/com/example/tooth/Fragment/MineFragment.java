@@ -1,6 +1,7 @@
 package com.example.tooth.Fragment;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -39,6 +40,7 @@ import org.xutils.x;
 /**
  * A simple {@link Fragment} subclass.
  */
+@SuppressLint("ValidFragment")
 @ContentView(R.layout.fragment_mine)
 public class MineFragment extends BaseFragment {
     private final String TAG = "MineFragment";

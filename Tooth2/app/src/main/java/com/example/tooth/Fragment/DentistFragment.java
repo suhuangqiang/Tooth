@@ -1,6 +1,7 @@
 package com.example.tooth.Fragment;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ProviderInfo;
 import android.graphics.drawable.ColorDrawable;
@@ -63,6 +64,7 @@ import in.srain.cube.views.ptr.PtrFrameLayout;
 /**
  * A simple {@link Fragment} subclass.
  */
+@SuppressLint("ValidFragment")
 @ContentView(R.layout.fragment_dentist)
 public class DentistFragment extends BaseFragment {
     private final String TAG = "DentistFragment";

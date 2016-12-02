@@ -1,6 +1,7 @@
 package com.example.tooth.Fragment;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -63,6 +64,7 @@ import java.util.logging.LogRecord;
 /**
  * A simple {@link Fragment} subclass.
  */
+@SuppressLint("ValidFragment")
 @ContentView(R.layout.fragment_home)
 public class HomeFragment extends BaseFragment {
     private final String TAG = "HomeFragment";
@@ -169,6 +171,7 @@ public class HomeFragment extends BaseFragment {
                     Intent intent = new Intent(getActivity(), WebActivity.class);
                     Bundle bundle = new Bundle();
                     bundle.putString("URL",advList.get(index).getLINKURL());
+                    bundle.putInt(DataDictionary.TYPE,3);
                     intent.putExtras(bundle);
                     startActivity(intent);
                 }

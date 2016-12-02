@@ -1,6 +1,7 @@
 package com.example.tooth.Fragment;
 
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -37,6 +38,7 @@ import in.srain.cube.views.ptr.PtrFrameLayout;
 /**
  * A simple {@link Fragment} subclass.
  */
+@SuppressLint("ValidFragment")
 @ContentView(R.layout.fragment_collect_shop)
 public class CollectShopFragment extends BaseFragment {
 

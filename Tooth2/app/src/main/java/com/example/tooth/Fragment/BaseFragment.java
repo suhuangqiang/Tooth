@@ -1,5 +1,6 @@
 package com.example.tooth.Fragment;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,6 +15,7 @@ import de.greenrobot.event.EventBus;
 /**
  * Created by wyouflf on 15/11/4.
  */
+@SuppressLint("ValidFragment")
 public class BaseFragment extends Fragment {
 
     private boolean injected = false;

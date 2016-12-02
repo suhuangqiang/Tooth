@@ -1,6 +1,7 @@
 package com.example.tooth.Fragment;
 
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -52,6 +53,7 @@ import in.srain.cube.views.ptr.PtrFrameLayout;
 /**
  * A simple {@link Fragment} subclass.
  */
+@SuppressLint("ValidFragment")
 @ContentView(R.layout.fragment_book)
 public class BookFragment extends BaseFragment {
     @ViewInject(R.id.fragment_book_lv)
