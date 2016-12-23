@@ -8,6 +8,8 @@ import com.example.tooth.Utils.BaiduUtils;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.umeng.socialize.PlatformConfig;
+import com.umeng.socialize.UMShareAPI;
 
 import org.xutils.x;
 
@@ -30,7 +32,10 @@ public class BaseAplication extends Application{
          */
         SDKInitializer.initialize(this);
         BaiduUtils.getInstance(this);
-
+        /*友盟*/
+        UMShareAPI.get(this);
+        PlatformConfig.setWeixin("wx967daebe835fbeac", "5bb696d9ccd75a38c8a0bfe0675559b3");
+        PlatformConfig.setQQZone("100424468", "c7394704798a158208a74ab60104f0ba");
         init();
     }
 

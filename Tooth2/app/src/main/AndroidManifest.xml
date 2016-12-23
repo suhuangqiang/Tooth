@@ -44,108 +44,161 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <!--友盟-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
     <application
         android:name=".BaseAplication"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme">
 
-        <!-- 适配配置 -->
+        <!--友盟-->
         <meta-data
-            android:name="design_width"
-            android:value="720" />
-        <meta-data
-            android:name="design_height"
-            android:value="1280" />
-        <!-- 百度地图 -->
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="873diyZlYVUopz9r3fcKsCEONODVsNIs" />
+            android:name="UMENG_APPKEY"
+            android:value="585cd0912ae85b346f001f05" >
+        </meta-data>
+            <!-- 适配配置 -->
+            <meta-data
+                android:name="design_width"
+                android:value="720" />
+            <meta-data
+                android:name="design_height"
+                android:value="1280" />
+            <!-- 百度地图 -->
+            <meta-data
+                android:name="com.baidu.lbsapi.API_KEY"
+                android:value="873diyZlYVUopz9r3fcKsCEONODVsNIs" />
 
-        <activity android:name=".Activity.MainActivity" />
-        <activity android:name=".Activity.WelcomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <activity android:name=".Activity.MainActivity" />
+            <activity android:name=".Activity.WelcomeActivity">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.AccountBindActivity" />
-        <activity android:name=".Activity.SearchActivity" />
-        <activity android:name=".Activity.HospitalDetailActivity" />
-        <activity android:name=".Activity.MyInfoActivity" />
-        <activity android:name=".Activity.EditNickNameActivity" />
-        <activity android:name=".Activity.BindAccountActivity" />
-        <activity android:name=".Activity.ChooseBookActivity" />
-        <activity android:name=".Activity.AppointmentActivity" />
-        <activity android:name=".Activity.HomeServiceActivity" />
-        <activity
-            android:name=".Activity.BookTypeActivity"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
-        <activity android:name=".Activity.HomeServicePayActivity" />
-        <activity android:name=".Activity.FamilyArchivesActivity" />
-        <activity android:name=".Activity.AddFamilyActivity" />
-        <activity android:name=".Activity.MyOrderActivity" />
-        <activity android:name=".Activity.IntegralActivity" />
-        <activity android:name=".Activity.RaidersActivity" />
-        <activity android:name=".Activity.MyBookActivity" />
-        <activity android:name=".Activity.MySettingActivity" />
-        <activity android:name=".Activity.AoutActivity" />
-        <activity android:name=".Activity.CollectionActivity" />
-        <activity android:name=".Activity.EncyclopediasActivity" />
-        <activity android:name=".Activity.AskActivity" />
-        <activity android:name=".Activity.MyNewsActivity" />
-        <activity android:name=".Activity.BookNewsActivity" />
-        <activity android:name=".Activity.OrderNewsActivity" />
-        <activity android:name=".Activity.AddressActivity" />
-        <activity android:name=".Activity.AddAddressActivity" />
-        <activity android:name=".Activity.FriendsActivity" />
-        <activity android:name=".Activity.ExerciseActivity" />
-        <activity android:name=".Activity.FriendsDetailActivity" />
-        <activity android:name=".Activity.AskListActivity" />
-        <activity android:name=".Activity.MyLocationActivity" />
-        <activity android:name=".citylist.CityList" />
-        <activity android:name=".PhotoView.ImagePagerActivity" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+            <activity android:name=".Activity.LoginActivity" />
+            <activity android:name=".Activity.AccountBindActivity" />
+            <activity android:name=".Activity.SearchActivity" />
+            <activity android:name=".Activity.HospitalDetailActivity" />
+            <activity android:name=".Activity.MyInfoActivity" />
+            <activity android:name=".Activity.EditNickNameActivity" />
+            <activity android:name=".Activity.BindAccountActivity" />
+            <activity android:name=".Activity.ChooseBookActivity" />
+            <activity android:name=".Activity.AppointmentActivity" />
+            <activity android:name=".Activity.HomeServiceActivity" />
+            <activity
+                android:name=".Activity.BookTypeActivity"
+                android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+            <activity android:name=".Activity.HomeServicePayActivity" />
+            <activity android:name=".Activity.FamilyArchivesActivity" />
+            <activity android:name=".Activity.AddFamilyActivity" />
+            <activity android:name=".Activity.MyOrderActivity" />
+            <activity android:name=".Activity.IntegralActivity" />
+            <activity android:name=".Activity.RaidersActivity" />
+            <activity android:name=".Activity.MyBookActivity" />
+            <activity android:name=".Activity.MySettingActivity" />
+            <activity android:name=".Activity.AoutActivity" />
+            <activity android:name=".Activity.CollectionActivity" />
+            <activity android:name=".Activity.EncyclopediasActivity" />
+            <activity android:name=".Activity.AskActivity" />
+            <activity android:name=".Activity.MyNewsActivity" />
+            <activity android:name=".Activity.BookNewsActivity" />
+            <activity android:name=".Activity.OrderNewsActivity" />
+            <activity android:name=".Activity.AddressActivity" />
+            <activity android:name=".Activity.AddAddressActivity" />
+            <activity android:name=".Activity.FriendsActivity" />
+            <activity android:name=".Activity.ExerciseActivity" />
+            <activity android:name=".Activity.FriendsDetailActivity" />
+            <activity android:name=".Activity.AskListActivity" />
+            <activity android:name=".Activity.MyLocationActivity" />
+            <activity android:name=".citylist.CityList" />
+            <activity android:name=".PhotoView.ImagePagerActivity" />
 
-        <service
-            android:name="com.baidu.location.f"
-            android:enabled="true"
-            android:process=":remote" />
+            <service
+                android:name="com.baidu.location.f"
+                android:enabled="true"
+                android:process=":remote" />
 
-        <activity android:name=".Activity.SearchAddressActivity" />
-        <activity android:name=".Activity.CutActivity" />
-        <activity android:name=".Activity.QuestionActivity" />
-        <activity android:name=".Activity.SuggestActivity" />
-        <activity android:name=".Activity.MyProblemActivity" />
-        <activity android:name=".Activity.WebActivity" />
-        <activity android:name=".Activity.MapViewActivity" />
-        <activity android:name=".Activity.MyQuetionActivity" />
+            <activity android:name=".Activity.SearchAddressActivity" />
+            <activity android:name=".Activity.CutActivity" />
+            <activity android:name=".Activity.QuestionActivity" />
+            <activity android:name=".Activity.SuggestActivity" />
+            <activity android:name=".Activity.MyProblemActivity" />
+            <activity android:name=".Activity.WebActivity" />
+            <activity android:name=".Activity.MapViewActivity" />
+            <activity android:name=".Activity.MyQuetionActivity" />
 
-        <!-- 支付宝 -->
-        <activity
-            android:name="com.alipay.sdk.app.H5PayActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:exported="false"
-            android:screenOrientation="behind" />
-        <activity
-            android:name="com.alipay.sdk.auth.AuthActivity"
-            android:configChanges="orientation|keyboardHidden|navigation"
-            android:exported="false"
-            android:screenOrientation="behind" />
-        <!--
- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
-        -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+            <!-- 支付宝 -->
+            <activity
+                android:name="com.alipay.sdk.app.H5PayActivity"
+                android:configChanges="orientation|keyboardHidden|navigation"
+                android:exported="false"
+                android:screenOrientation="behind" />
+            <activity
+                android:name="com.alipay.sdk.auth.AuthActivity"
+                android:configChanges="orientation|keyboardHidden|navigation"
+                android:exported="false"
+                android:screenOrientation="behind" />
+            <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+         App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+            -->
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Activity.EvaluateActivity" />
-        <activity android:name=".Activity.RecordDetailActivity" />
-        <activity android:name=".Activity.RecordActivity"></activity>
-    </application>
+            <activity android:name=".Activity.EvaluateActivity" />
+            <activity android:name=".Activity.RecordDetailActivity" />
+            <activity android:name=".Activity.RecordActivity" />
+            <activity android:name=".wxapi.WXEntryActivity"></activity>
+
+            <!--友盟-->
+            <!--微信-->
+            <activity
+                android:name=".wxapi.WXEntryActivity"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="true"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            <!--qq精简版-->
+            <activity
+                android:name="com.umeng.qq.tencent.AuthActivity"
+                android:launchMode="singleTask"
+                android:noHistory="true" >
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+
+                    <data android:scheme="tencent100424468" />
+                </intent-filter>
+            </activity>
+            <activity
+                android:name="com.umeng.qq.tencent.AssistActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges="orientation|keyboardHidden|screenSize"/>
+        </application>
 
 </manifest>

@@ -69,7 +69,7 @@ public class AppointmentActivity extends BaseActivity {
      * 记录当前点击的医生下标 第一个为默认不选择，获取数据应下标加1
      */
     private int index = 0,lastIndex = -1;
-    /**
+    /**。
      * 记录当前点击的时间的下标 gridview中
      */
     private int gv_index;

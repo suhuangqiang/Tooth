@@ -1,5 +1,6 @@
 package com.example.tooth.Activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +24,10 @@ import com.example.tooth.Utils.ModeEnum;
 import com.example.tooth.Utils.NetWorkUtils;
 import com.example.tooth.widget.DataDictionary;
 import com.example.tooth.widget.URLList;
+import com.umeng.socialize.ShareAction;
+import com.umeng.socialize.UMShareAPI;
+import com.umeng.socialize.UMShareListener;
+import com.umeng.socialize.bean.SHARE_MEDIA;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.Event;
@@ -119,6 +124,33 @@ public class WebActivity extends BaseActivity {
     }
 
     /**
+     * 点击分享
+     * @param view
+     */
+    @Event(R.id.activity_web_share_img)
+    private void OnShareClick(View view){
+        new ShareAction(WebActivity.this).setPlatform(SHARE_MEDIA.QQ)
+                .withText("hello")
+                .setCallback(new UMShareListener() {
+                    @Override
+                    public void onResult(SHARE_MEDIA share_media) {
+
+                    }
+
+                    @Override
+                    public void onError(SHARE_MEDIA share_media, Throwable throwable) {
+
+                    }
+
+                    @Override
+                    public void onCancel(SHARE_MEDIA share_media) {
+
+                    }
+                })
+                .share();
+    }
+
+    /**
      * 增加收藏
      */
     private void addCollect(){
@@ -178,5 +210,11 @@ public class WebActivity extends BaseActivity {
         }else {
             Toast.makeText(getBaseContext(),message.getMsg(),Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        UMShareAPI.get(this).onActivityResult(requestCode, resultCode, data);
     }
 }
